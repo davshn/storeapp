@@ -1,4 +1,39 @@
 {
   "name": "storeapp",
-  "displayName": "storeapp"
+  "displayName": "storeapp",
+  "android": {
+    "package": "com.davshn.storeapp"
+  },
+  "ios": {
+    "bundleIdentifier": "com.davshn.storeapp"
+  },
+  "expo": {
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "android": {
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.davshn.storeapp",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAIlYx8GUwENaJzWDWP3QIU8-7rP4nBjxQ"
+        }
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.davshn.storeapp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a7210618-e2d3-49f8-ab09-ddb1be610625"
+      }
+    }
+  }
 }
